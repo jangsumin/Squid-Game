@@ -1,9 +1,9 @@
-import StartGame from "./Component/StartGame";
+import GameController from "./Component/GameController";
 
 function App() {
   return (
     <div>
-      <StartGame />
+      <GameController />
     </div>
   );
 }
