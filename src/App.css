@@ -21,3 +21,12 @@ ul {
   /* background-color: #088A08; */
   background-color: #DF7401;
 }
+
+.end-line {
+  position: absolute;
+  top: 35px;
+  left: 370px;
+  width: 30px;
+  height: 150px;
+  background-color: black;
+}
