@@ -2,6 +2,16 @@ ul {
   display: flex;
 }
 
+.start-button {
+  margin: 50px 50px;
+  width: 270px;
+  height: 60px;
+  font-size: 40px;
+  border-radius: 7px;
+  background-color: #088A08;
+  box-shadow: 1px 1px 3px 1px #000000;
+}
+
 .game-space {
   position: relative;
 }
@@ -18,7 +28,6 @@ ul {
   width: 40px;
   height: 100px;
   margin: 0 10px;
-  /* background-color: #088A08; */
   background-color: #DF7401;
 }
 
