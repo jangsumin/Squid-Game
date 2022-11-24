@@ -1,6 +1,7 @@
 import StartGame from "./Component/StartGame";
 import InputBridgeNumber from "./Component/InputBridgeNumber";
 import BridgeMaker from "./Component/BridgeMaker";
+import "./App.css";
 
 function App() {
   return (
