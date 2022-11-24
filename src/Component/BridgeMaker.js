@@ -3,7 +3,10 @@ function BridgeMaker(props) {
   const listBridges = bridgeArray.map((number) => <li className="bridge"></li>);
 
   return (
-    <ul>{listBridges}</ul>
+    <>
+      <ul className="up-bridge">{listBridges}</ul>
+      <ul className="down-bridge">{listBridges}</ul>
+    </>
   );
 }
 
