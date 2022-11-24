@@ -1,10 +1,13 @@
-import GameController from "./Component/GameController";
+import StartGame from "./Component/StartGame";
+import InputBridgeNumber from "./Component/InputBridgeNumber";
 
 function App() {
   return (
     <div>
-      <GameController />
+      <StartGame />
+      <InputBridgeNumber />
     </div>
   );
 }
+
 export default App;
