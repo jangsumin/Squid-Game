@@ -6,6 +6,10 @@ function InputBridgeNumber() {
   const navigate = useNavigate();
 
   const saveLength = (e) => {
+    if (!(e.currentTarget.value >= 5 && e.currentTarget.value <= 8)) {
+      alert("5와 8 사이의 숫자만 입력해라!");
+      e.currentTarget.value = 5;
+    }
     setLength(e.currentTarget.value);
   };
 
