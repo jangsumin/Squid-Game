@@ -2,8 +2,14 @@ ul {
   display: flex;
 }
 
+.app {
+  margin: 300px auto;
+  width: 600px;
+}
+
 .start-button {
-  margin: 50px 50px;
+  display: block;
+  margin: 0 auto;
   width: 270px;
   height: 60px;
   font-size: 40px;
