@@ -1,11 +1,10 @@
 function InputBridgeNumber() {
   return (
-    <form>
+    <form class="input-form">
       <label>
-        다리 길이 입력!
-        <input type="text" name="numberOfBridges" placeholder="5에서 10까지의 숫자를 입력하고"/>
+        <input class="input-txt" type="text" name="numberOfBridges" placeholder="5에서 8까지의 숫자를 입력하고"/>
       </label>
-      <input type="submit" value="눌러!" />
+      <input class="input-btn" type="submit" value="눌러!" />
     </form>
   );
 }

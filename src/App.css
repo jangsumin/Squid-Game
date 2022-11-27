@@ -18,6 +18,24 @@ ul {
   box-shadow: 1px 1px 3px 1px #000000;
 }
 
+.input-form {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.input-txt {
+  width: 380px;
+  text-align: center;
+  font-size: 25px;
+}
+
+.input-btn {
+  margin-left: 5px;
+  font-size: 25px;
+  background-color: #088A08;
+  box-shadow: 1px 1px 3px 1px #000000;
+}
+
 .game-space {
   position: relative;
 }
