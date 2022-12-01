@@ -4,8 +4,8 @@ function BridgeMaker(props) {
 
   return (
     <div className="game-space">
-      <div className="character"></div>
-      <div className="end-line"></div>
+      {/* <div className="character"></div>
+      <div className="end-line"></div> */}
       <ul className="up-bridge">{listBridges}</ul>
       <ul className="down-bridge">{listBridges}</ul>
     </div>

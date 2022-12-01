@@ -50,8 +50,10 @@ ul {
 
 .bridge {
   width: 40px;
-  height: 100px;
-  margin: 0 10px;
+  height: 120px;
+  margin: 10px 10px;
+  transform: rotate(2deg);
+  border-radius: 4px;
   background-color: #DF7401;
 }
 
