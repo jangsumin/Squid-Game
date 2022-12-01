@@ -1,4 +1,7 @@
+import answerBridgeMaker from "./answerBridgeMaker";
+
 function Move(props) {
+  const answerBridge = answerBridgeMaker.makeAnswerBridge(props.numberOfBridges);
   const bridge = [];
 
   const saveUpBridge = () => {
