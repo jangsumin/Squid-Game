@@ -11,7 +11,7 @@ function Game() {
     <>
       <BridgeMaker numberOfBridges={Number(bridgeLength)}/>
       <Move />
-      <RetryOrQuit />
+      {/* <RetryOrQuit /> */}
     </>
   );
 };
