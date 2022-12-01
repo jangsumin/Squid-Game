@@ -7,12 +7,12 @@ function Move(props) {
   const saveUpBridge = () => {
     bridge.push(1);
     console.log(bridge);
-  }
+  };
   
   const saveDownBridge = () => {
     bridge.push(0);
     console.log(bridge);
-  }
+  };
 
   return (
     <>

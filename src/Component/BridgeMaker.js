@@ -6,9 +6,8 @@ function BridgeMaker(props) {
 
   return (
     <div className="game-space">
-      <div>
-        <img className="character" src={squid} alt=""></img>
-      </div>
+      <img className="character" src={squid} alt=""></img>
+      <div className='start-line'></div>
       <div>
         <ul className="up-bridge">{listBridges}</ul>
         <ul className="down-bridge">{listBridges}</ul>

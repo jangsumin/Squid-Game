@@ -38,14 +38,18 @@ ul {
 
 .game-space {
   display: flex;
+  position: relative;
   margin-bottom: 40px;
 }
 
 .character {
   display: block;
-  margin: 110px 0 0 0;
+  position: absolute;
+  top: 110px;
+  left: 5px;
   width: 50px;
   height: 50px;
+  z-index: 10;
 }
 
 .bridge {
@@ -55,6 +59,12 @@ ul {
   transform: rotate(2deg);
   border-radius: 4px;
   background-color: #DF7401;
+}
+
+.start-line {
+  margin: 40px 20px 0 0;
+  width: 40px;
+  height: 200px;
 }
 
 .end-line {
