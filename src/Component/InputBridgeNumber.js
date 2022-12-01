@@ -22,11 +22,11 @@ function InputBridgeNumber() {
   };
 
   return (
-    <form class="input-form">
+    <form className="input-form">
       <label>
-        <input class="input-txt" type="text" name="numberOfBridges" placeholder="5에서 8까지의 숫자를 입력하고" onChange={saveLength}/>
+        <input className="input-txt" type="text" name="numberOfBridges" placeholder="5에서 8까지의 숫자를 입력하고" onChange={saveLength}/>
       </label>
-      <input class="input-btn" type="submit" value="눌러!" onClick={navigateToGame} />
+      <input className="input-btn" type="submit" value="눌러!" onClick={navigateToGame} />
     </form>
   );
 }
