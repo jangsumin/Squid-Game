@@ -13,7 +13,8 @@ function Game() {
   const listBridges = bridgeArray.map((number, idx) => <li key={idx} className="bridge"></li>);
 
   // 정답인 다리와 내가 입력할 다리의 배열 생성
-  const answerBridge = answerBridgeMaker.makeAnswerBridge(Number(bridgeLength));
+  // const answerBridge = answerBridgeMaker.makeAnswerBridge(Number(bridgeLength));
+  const [answerBridge, setAnswerBridge] = useState(answerBridgeMaker.makeAnswerBridge(Number(bridgeLength)));
   const [bridge, setBridge] = useState([]);
 
   // 처음 오징어 캐릭터의 시작 위치는 top: 110px 그리고 left: 5px
@@ -34,12 +35,21 @@ function Game() {
     setSquidLeft(squidLeft + 60);
   }
 
+  // bridge 업데이트와 동시에 정답 다리와 비교 
+  const compareBridge = (bridge, answer) => {
+    if (bridge.length === answer.length) console.log("게임 성공!");
+    if (bridge[bridge.length - 1] === answer[bridge.length - 1]) console.log("정답");
+    if (bridge[bridge.length - 1] !== answer[bridge.length - 1]) console.log("틀림");
+  }
+
   // useEffect 훅 사용해서 비동기 처리 방지
   const [checkRender, setCheckRender] = useState(false);
   useEffect(() => {
     if (checkRender) {
-      console.log("업데이트");
-      console.log(bridge);
+      // console.log(answerBridge);
+      // console.log('업데이트!');
+      // console.log(bridge);
+      compareBridge(bridge, answerBridge);
     }
     setCheckRender(true);
   }, [bridge]);
